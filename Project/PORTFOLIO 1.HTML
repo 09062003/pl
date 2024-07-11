@@ -3,74 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe | Front-End Developer</title>
-    <link rel="stylesheet" href="PORTFOLIO 1.CSS">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
-            <h1>John Doe</h1>
-            <p>Front-End Developer</p>
-        </div>
+    <header class="bg-primary text-white text-center py-5">
+        <h1>NAVYA S G</h1>
+        <p>Web Developer & Designer</p>
     </header>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="about">
+    <section id="about" class="py-5">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm John Doe, a passionate front-end developer. I love creating beautiful and functional websites.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <img src="images/project1.png" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>Description of project 1.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="c:\Users\NAVYA\Desktop\Navya\WhatsApp Image 2024-04-10 at 11.05.22_b318400e.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
                 </div>
-                <div class="project">
-                    <img src="images/project2.png" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>Description of project 2.</p>
-                </div>
-                <div class="project">
-                    <img src="images/project3.png" alt="Project 3">
-                    <h3>Project 3</h3>
-                    <p>Description of project 3.</p>
+                <div class="col-md-8">
+                    <h2>About Me</h2>
+                    <p>Hi, I'm NAVYA, a passionate web developer with experience in creating dynamic and responsive websites. I have a strong background in HTML, CSS, JavaScript, and various frameworks.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="projects" class="bg-light py-5">
         <div class="container">
-            <h2>Contact</h2>
-            <p>Email: johndoe@example.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Description of project 1.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Description of project 2.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/project3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Description of project 3.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
+    <section id="skills" class="py-5">
         <div class="container">
-            <p>&copy; 2024 John Doe</p>
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>HTML</h3>
+                    <p>Proficient in HTML5 and building semantically correct web pages.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>CSS</h3>
+                    <p>Experienced in CSS3, including Flexbox and Grid layout systems.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>JavaScript</h3>
+                    <p>Skilled in JavaScript and various libraries such as jQuery and React.</p>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Contact</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 NAVYA. All rights reserved.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
-
