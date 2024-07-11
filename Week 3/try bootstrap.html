@@ -1,0 +1,507 @@
+ <!--BOOTSTRAP -> popular frontend framework designed for developing responsive webpage
+                     no need to write any customed css-->
+    <!--HOW TO INSTALL? -> getbootstrap.com
+                           bootstrap.min.css
+                           bootstrap.min.js-->
+        <!--values can be only[1-5]-->
+                           
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BOOTSTRAP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!--CONTAINER -> fixed width-->
+    <div class="container" style="background-color: goldenrod; ">
+        <h1>CONTAINER</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aut!</p>
+    </div>
+    <!--CONTAINER-FLUID -> full width-->
+    <div class="container-fluid" style="background-color: rgb(188, 76, 36);">
+        <h1>CONTAINER-FLUID</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aut!</p>
+    </div>
+
+    <!-- p->padding
+         m->margin
+         t,r,b,l->top,right,bottom,left
+         border
+         bg->background
+         text->text color  -->
+
+    <!--COLORS-->
+    <!--bg,text,table-->
+    <!--BACK-GROUND-->
+    <div class="bg-primary mt-5 p-3 ">PRIMARY</div>
+    <div class="bg-secondary mt-5 p-3">SECONDARY</div>
+    <div class="bg-warning mt-5 p-3">WARNING</div>
+    <div class="bg-danger mt-5 p-3">DANGER</div>
+    <div class="bg-success mt-5 p-3">SUCCESS</div>
+    <div class="bg-info mt-5 p-3">INFO</div>
+    <div class="bg-light mt-5 p-3">LIGHT</div>
+    <div class="bg-body mt-5 p-3">BODY</div>
+    <div class="bg-white mt-5 p-3">WHITE</div>
+    <div class="bg-muted mt-5 p-3">MUTED</div>
+    
+    <!--TEXT-->
+    <p class="text-muted">muted.</p>
+    <p class="text-primary">important.</p>
+    <p class="text-success">success.</p>
+    <p class="text-info">information.</p>
+    <p class="text-warning">warning.</p>
+    <p class="text-danger">danger.</p>
+    <p class="text-secondary">Secondary text.</p>
+    <p class="text-dark">dark grey.</p>
+    <p class="text-body">Default(often black).</p>
+    <p class="text-light">light grey (on white background).</p>
+    <p class="text-white">white (on white background).</p>
+
+    <!--examples with p,m,border,bg,color,text-->
+    <div class="container p-5 my-5 border">welcome</div>
+    <div class="container p-5 my-5 bg-dark text-white">welcome</div>
+    <div class="container p-5 my-5 bg-primary text-black">welcome</div>
+
+    <!--OPACITY-->
+    <div class="container mt-3">
+     <p class="text-black-50 bg-white">Black text with 50% opacity on white background</p>
+     <p class="text-white-50 bg-dark">White text with 50% opacity on black background</p>
+    </div>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <!--GRID
+        -> total width is divided into 12spans
+           they can be merged together according to use-->
+           <div class="row">
+            <div class="col">.col</div>
+            <div class="col-sm">sm</div>
+            <div class="col-md">md</div>
+            <div class="col-lg">lg</div>
+            <div class="col-xl">xl</div>
+            <div class="col-xxl">xxl</div>
+          </div><br>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <!--merge-->
+    <div class="row">
+        <div class="col-sm-3 bg-danger">WELCOME</div>
+        <div class="col-sm-2 bg-success">TO</div>
+        <div class="col-sm-4 bg-primary">MY</div>
+        <div class="col-sm-3 bg-warning">PAGE</div>
+      </div><br>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <!--TEXT-->
+    <div class="container">
+        <h1>h1 Bootstrap </h1>
+        <h2>h2 Bootstrap </h2>
+        <h3>h3 Bootstrap </h3>
+        <h4>h4 Bootstrap </h4>
+        <h5>h5 Bootstrap </h5>
+        <h6>h6 Bootstrap </h6>
+    </div><br>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <!--OTHER ELEMENTS BEHAVE AS HEADING-->
+    <div class="container">
+     <p class="h1">h1 Bootstrap </p>
+     <p class="h2">h2 Bootstrap </p>
+     <p class="h3">h3 Bootstrap </p>
+     <p class="h4">h4 Bootstrap </p>
+     <p class="h5">h5 Bootstrap </p>
+     <p class="h6">h6 Bootstrap </p>
+    </div><br>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <!--DISPLAY-->
+    <div class="container">
+      <h1 class="display-1">Display 1</h1>
+      <h1 class="display-2">Display 2</h1>
+      <h1 class="display-3">Display 3</h1>
+      <h1 class="display-4">Display 4</h1>
+      <h1 class="display-5">Display 5</h1>
+      <h1 class="display-6">Display 6</h1>
+    </div><br>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <!--SMALL-->
+    <div class="container">
+      <h1>h1 heading <small>secondary text</small></h1>
+    </div><br>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <!--MARK-->
+    <div class="container">
+      <h1>High<mark>Light</mark>Text</h1> 
+    </div><br>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <!--ABBREVIATION--> 
+    <div class="container">
+        <!--normal-->
+      <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        <!--smaller-->
+      <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr> was founded in 1948.</p>
+    </div><br>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <!--BLOCKQUOTE/BLOCKQUOTE-FOOTER--> 
+    <div class="container">
+        <blockquote class="blockquote">
+            <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization.</p>
+            <footer class="blockquote-footer">From WWF's website</footer>
+          </blockquote>
+    </div><br>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <!--DESCRIPTION LIST-->
+    <div class="container">
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+          </dl> 
+    </div><br>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <!--CODE-->
+    <div class="container">
+        <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
+    </div><br>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <!--KEYBOARD INPUTS-kbd-->
+    <div class="container">
+        <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+    </div><br>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <!--Pre-->
+    <div class="container">
+        <pre>
+            Text in a pre element
+            is displayed in a fixed-width
+            font, and it preserves
+            both      spaces and
+            line breaks.
+            </pre>
+    </div><br>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   <!--TYPOGRAPHY--> 
+   <div class="container">
+    <p class="text-start">Left-aligned text.</p>
+    <p class="text-end">Right-aligned text.</p>      
+    <p class="text-center">Center-aligned text.</p>
+    <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+  </div>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   <!--LEAD-->
+   <div class="container">
+      <p class="lead">This paragraph stands out.</p>
+   </div>
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   <!--text-break-->
+   <div class="container">
+     <p class="text-break">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus exercitationem delectus, nihil numquam aperiam suscipit?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur non earum consequatur rerum tenetur numquam voluptates eveniet distinctio quas!</p>
+   </div>
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   <!--TEXT-DECOR-->
+   <div class="container">
+   <a href="#" class="text-decoration-none">A link without underline.</a>
+   </div>
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   <!--CASE-->
+   <div class="container">
+    <p class="text-lowercase">Lowercased text.</p>
+    <p class="text-uppercase">Uppercased text.</p>      
+    <p class="text-capitalize">Capitalized text.</p>
+   </div>
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   <!--LIST-UNSTYLED-->
+   <div class="container">
+    <ul class="list-unstyled">
+        <!--list type is removed for direct children-->
+        <li>Coffee</li>
+        <li>Tea
+          <ul>
+            <li>Black tea</li>
+            <li>Green tea</li>
+          </ul>
+        </li>
+        <li>Milk</li>
+      </ul>
+   </div>
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   <!--LIsT-INLINE-->
+   <div class="container">
+   <ul class="list-inline">
+    <li class="list-inline-item">Coffee</li>
+    <li class="list-inline-item">Tea</li>
+    <li class="list-inline-item">Milk</li>
+  </ul></div>
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  <!--IMAGE POSITION-->
+    <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" class="img-fluid float-start"/>
+    <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" class="img-fluid float-end"/>
+
+<!--TABLE-->
+<div class="container">
+    <table class="table"> <!-- =table table-dark -->
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!--TABLE-STRIPED-->
+<div class="container">
+<table class="table table-striped"> <!-- =table table-dark table-striped-->
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!--TABLE-BORDERED-->
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!--TABLE HOVER-->
+<div class="container">
+<table class="table table-hover"> <!-- =table table-dark table-hover-->
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!--TABLE BORDERLESS-->
+<div class="container">
+    <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!--TABLE BORDERLESS-->
+<div class="container">
+    <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<!--TABLE HEAD COLORS-->
+<div class="container">
+     <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table">
+      <thead class="table-success">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+<!--TABLE SMALL -->
+<div class="container mt-3">
+    <table class="table table-bordered table-sm">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
