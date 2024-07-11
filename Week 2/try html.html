@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--DOCTYPE is not a HTML tag.It just give information to the browser that it is HTML5 -->
+<html lang="en">
+    <!--HTML ->
+        hyper text markup language
+        hypertext -> text with link--->
+<head>
+    <title>Document</title>
+    <script></script>
+    <style>
+        table{
+            border: 3px solid rgb(41, 104, 194); padding: 2px;
+        }
+        th,td,tr{
+            border: 2px solid rgb(109, 136, 28);
+        }
+        tr{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <!--P->
+        <p>-gives one line before and after a para.-->
+            
+        <!-- (shortcut) p>h1+h2-->
+        <p>
+            <h1></h1>
+            <h2></h2>
+        </p>
+
+        <h1 style="color: rgb(90, 53, 164);">Heading 1</h1>
+        <p style="color: rgb(35, 118, 177);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, repudiandae. Facilis, ab! Blanditiis doloribus minus enim impedit, facilis nobis dolorum? Perspiciatis quidem consectetur tempore nisi optio eum facere dolorem aut quo natus quia autem asperiores cupiditate ipsam, ducimus ratione inventore repudiandae voluptas atque iusto illum impedit! Animi impedit laboriosam enim.</p>
+        <h5>Images</h5>
+        <img src="C:\Users\NAVYA\Desktop\download.jpeg" alt="flower" width="200" height="200">
+    </p>
+
+    <!--HTML ATTRIBUTES ->type|name|id|value|placeholdre|multiple|novalidate|required|
+                      pattern|class|for|width|height|style|min|max|disabled|autocomplete -->
+
+    <!--HYPERTEXT
+        hypertext -> text with link-->
+    <a href="abc.html">Click here</a>
+    <!--hypertext -> button as a link-->
+    <button onclick="document.location='abc.html'">OK</button>
+    <!--hypertext -> image as a link-->
+    <a href="abc.html"><img src=""></a>            
+    <!--hypertext -> link to mail-->
+    <a href="mailto:abc@gmail.com">click here</a>
+
+    <!--ABSOLUTE URL -> complete address of resource
+                        includes http,domain name-->
+    <a href="https://www.w3schools.com/">W3Schools</a>
+
+    <!--DIV
+            - to define content in a section <div> is used
+            - block level element.
+            - It breaks the line automatically
+            - can group n number of elements within <div>
+            - can give same style to group of elements-->
+
+    <!--(Shortcut) div>p*3-->
+    
+            <div>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+
+<!--SPAN -> can be used to group HTML elements-->
+<!--Inline level elements-->
+    <div>
+        <h5>Span</h5>
+    Welcome to <span>MERN COURSE</span>
+</div>
+
+<!--BLOCKQUOTE -> gives space at the beginning-->
+<blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit.Explicabo aliquid debitis minus deleniti at officiis.</blockquote>
+
+<!--CITE -> unique representation(italic)-->
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <cite>Facilis atque tenetur autem asperiores</cite> fugiat odio esse laborum quo voluptatem temporibus.</p>
+
+<!--ABBREVIATION -> on hover shows the full form-->
+<p>The<abbr title="World heath organization">WHO</abbr>was found in 1984</p>
+
+<!--BI-DIRECTONAL OVERRRIDE
+        directions-> ltr
+                     rtl -->
+    <p><bdo dir="ltr">hi I'm Navya.</bdo></p>
+    <p><bdo dir="rtl">hi I'm Navya.</bdo></p>  
+  
+<!--LIST - to define the list of items,mainly used to create menu
+        TYPES- ordered,unordered,datalist
+        DATALIST--to create dropdown box-->
+<h5>Ordered list</h5>
+<ol>
+    <li>a</li>
+    <li>b</li>
+</ol>
+
+<h5>unordered list</h5>
+<ul>
+    <li>a</li>
+    <li>b</li>
+</ul>
+
+<h5>Datalist</h5>
+<input list="op">
+<datalist id="op">
+    <option>a</option>
+    <option>b</option>
+</datalist>
+
+<!--TABLE-->
+    <table>
+        <h5>Table</h5>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Roll</th>
+        <tr>
+            <td>1</td>
+            <td>Navya</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sheela</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Shuru</td>
+            <td>37</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center"><button style="color: rgb(172, 52, 86); background-color: aquamarine;">submit</button></td>
+        </tr>
+    </table>
+
+<!--
+  FORM ATTRIBUTES
+    action -> to mention linked page
+    target -> where to open the page
+    method -> http method to transfer data
+    novvalidate -> hide validations
+-->
+
+<form action="abc.html">
+    <!--FORM ACTION ->
+              once if we click submit it opens the page which is mentioned in form action artribute
+              if no action it reloads the same page-->
+
+    <!--TARGET ATTRIBUTE = _self(same page in a frame)
+                           _blank(new tab)
+                           _parent(same page fully)
+                           _top( same page full window)
+    -->
+
+    <!--METHODS ->get
+                ->post  --> 
+                           
+    <h5>Form</h5>
+    <!--FORM TAG to input elements using input tag,select,-->
+    <pre>
+    <label>Name:</label>
+    <input type="text"required placeholder="Navya" pattern="[A-Z]{3}[0-9]{2}"><br>
+    <label>Last name:</label>
+    <input type="text"required><br>
+    <label>Password:</label>
+    <input type="password"required><br>
+    <label>Email:</label>
+    <input type="email"required><br>
+    <label>Phone:</label>
+    <input type="number"required><br>
+    <label>Gender</label>
+    <input type="radio" name="Gender" value="Male">Male
+    <input type="radio" name="Gender" value="Female">Female <br>
+    <label>DOB</label>
+    <input type="date"><br>
+    <label>Address</label>
+    <textarea name="Address" rows="3" cols="15">Address</textarea><br>
+    <label>Place</label>
+    <select name="Place">
+        <option value="place"></option>
+        <option value="Coimbatore">Coimbatore</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Bangalore">Bangalore</option>
+    </select><br>
+    <label>State</label>
+    <input list="op">
+<datalist id="op">
+    <option>a</option>
+    <option>b</option>
+</datalist><br>
+    <label>Accept cookies</label>
+    <input type="checkbox" required>I have read all
+    <input type="checkbox" required>I accept all <br>
+    <input type="submit">&nbsp;<input type="reset">
+    </pre>
+</form>
+
+<!--ALERT MESSAGE-->
+<div>
+    <pre>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ratione labore autem dolorem nam eum voluptates amet id quod eveniet.
+        <button onclick="alert('welcome')">ok</button>
+    </pre>
+<footer></footer>
+</div>
+</body>
+</html>

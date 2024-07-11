@@ -1,0 +1,172 @@
+ 
+ /*--CSS3 -> used to apply style to element-->
+   --TYPES ->inline css(in same line of selector)
+             internal css(within html file)
+             external css(in seperate css file) */
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+ /*--EXTERNAL CSS--*/
+ /*--HTML SELECTOR--*/
+    /* selector{
+         prop:value;
+         prop:value} */
+
+/*-----------------------------------------------------------------------------------------------------------------------*/        
+
+ /*CASCADING-> when we apply more than 1 value for style to the same element browser will follow certain rules and it gets the presidncy and decide which style should be use*/        
+
+    /*--SELECTORS -> used to apply styles for html elements
+    TYPES-> 
+    1.Basic selectors*/
+     /* a.Id (in a html page id should be unique)*/
+     #abc{
+        color: blueviolet;
+     }
+
+    /*b.class(can bed use multiple times)*/
+    .abc{
+        color: blue;
+          }
+
+  /*c.html*/ 
+
+  /*d.Universal selector (selects all the elements)*/
+    
+
+  /*e.Type selector*/ 
+    h5{
+       color: brown;
+     }
+
+  /*d.combinator[!should not be in red!]
+  (applied to all p under div)*/
+  div1 p{
+       color: rgb(159, 159, 17);
+     }   
+  /*(applied only to the direct children of div)*/
+   div > h5 {
+    background-color: rgb(238, 40, 40);
+       }  
+  
+  /*(applied p1 immediately after div(not inside div)) */   
+    div + p1 {
+        background-color: aquamarine;
+    }   
+/*2.Attribute selector*/
+  /*a.input type=text*/
+  /*b.where class name starts with btn */
+
+/*Pseudo Selectors*/        
+
+    li:nth-child(2){
+    background-color: rgb(203, 123, 26);
+    }
+
+    /*-----------------------------------------------------------------------------------------------------------------------*/
+
+/*padding styles
+               -->  /* padding: 30px;*/
+        
+                    /* padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-left: 30px;
+                    padding-right: 30px;*/
+        
+                    /*T,R,B,L
+                    padding: 20px 20px 40px 50px;*/
+                    
+  .container{
+      background-color: rgb(245, 243, 242);
+      color: blueviolet;
+      padding: 20px;
+      margin-top: 10%;
+      margin-left: 35%;
+      margin-right: 35%;
+      border: 15px solid green;
+      width: 400px;
+      height: 300px;
+      box-sizing: border-box;
+      text-align: center;
+  }
+  
+  form{
+      padding: 50px;
+      margin-left: 20%;
+      color: rgb(87, 7, 47);
+  }
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+  
+/*CSS POSITIONING -> controls back and out elements are placed in the webpage layout
+TYPES -> (1)static - default positioning for the html element 
+                   - when an element is statically positioned it follows normal page flow
+                   - the T,R,L,R properties do not affect positioning
+                   - layout is depend on the element display type 
+        
+       (2)absolute - (overlay on another element within same <div>)
+                   - css layout technique where an element is removed from normal document flow
+                   - placed at a specic coordinate relative to it's container      
+                   - when we need to overlay one element over another element-absolute is used        
+      
+       (3)relative - (donot overlay on eachother(gn within same <div>,placed one after another) 
+                   - allows element to be positioned relative with their normal position in their document
+                   - will not remove elements from the document flow 
+                   - often used as a positioning context for absolute position child element   
+
+          (4)fixed - ((top:0;)will not move if we scroll the page)
+                   - places an element relative to the viewport
+                   - always stay in same position even if we scroll the page
+         
+         (5)sticky - (moves a certain position when we scroll then stays fixed)
+                   - it is a toggled between relative and absolute position when we scroll*/
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+/*--FLEX BOX-> -container
+               -organize and keeps the items stored in it
+    Flex items->
+    Flex directions-> column,row,column-reverse,row-reverse 
+    To make container as flex box */
+        
+    .n{
+        display:flex;
+        background-color: rgb(237, 245, 27);
+        width: 1000px;
+        border: 1px solid black;
+        margin-left: 170px;
+        }
+
+    div > li1{
+      padding: 10px;
+      background-color: rgb(157, 241, 241);
+      padding: 20px;
+      color: black;
+      border: 1px solid rgb(15, 15, 15);
+      margin: 10px;
+      text-align: center;
+      margin-left: 30px;
+    }
+
+    .m{
+      display:flex;
+      flex-direction: column;
+      background-color: rgb(214, 149, 194);
+      width: 1000px;
+      border: 1px solid black;
+      margin-left: 170px;
+      }
+
+      div > li2{
+        background-color: rgb(166, 208, 69);
+        padding: 20px;
+        color: black;
+        border: 1px solid black;
+        margin: 10px;
+        width: 450px;
+        text-align: center;
+        margin-left: 250px;
+      }
+
+                    
+
